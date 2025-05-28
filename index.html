@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>흔들리는 꽃들 속에서 네 향수향이 느껴진 거야</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Pretendard&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="lockscreen" onclick="activateChat()">
+    <img src="lockscreen-bg.jpg" alt="배경화면" class="background">
+    <div class="clock" id="clock">12:34</div>
+    <div class="music-widget">
+      <div class="song-info">
+        <div class="title">Love Dive</div>
+        <div class="artist">IVE</div>
+      </div>
+      <div class="music-bar"></div>
+    </div>
+    <div class="slide-text">향수를 만들 준비가 되셨나요?</div>
+  </div>
+
+  <div class="chat-screen" id="chat">
+    <div class="messages" id="messages">
+      <div class="message ai">안녕하세요! 좋아하는 노래를 알려주시면 그 분위기에 어울리는 향수를 추천해드릴게요.</div>
+    </div>
+    <div class="input-area">
+      <input type="text" id="userInput" placeholder="좋아하는 노래를 입력하세요..." />
+      <button onclick="sendMessage()">보내기</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
